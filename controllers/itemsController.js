@@ -29,7 +29,7 @@ export const modificarItem = async (req, res) => {
 }
 
 export const borrarItem = async (req, res) => {
-    const filasEliminadas = await eliminarItem(req.params.id, req.body);
+    const filasEliminadas = await eliminarItem(req.params.id);
 
     // Respuesta exitosa con contenido (200)
     return res.status(200).json({
